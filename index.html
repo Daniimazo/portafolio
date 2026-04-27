@@ -3,32 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Inicio</title>
+    <title>Portafolio - Daniel Mazo Vásquez</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span class="title">My Portafolio</span>
-            <span class="subtitle">by Dani</span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="brand-title">My Portafolio</span>
+                <span class="brand-subtitle">by Dani</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projects.html">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
+    </nav>
 
-    <main>
-        <h1>Bienvenido a mi Portafolio</h1>
-        <p>Aquí encontrarás información sobre mis proyectos y habilidades.</p>
-    </main>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-name">Daniel Mazo Vásquez</h1>
+            <p class="hero-role">Desarrollador de Software Junior</p>
+            <p class="hero-quote">"Construyendo soluciones inteligentes con código y creatividad."</p>
+            <a href="#contacto" class="btn btn-primary btn-lg hero-btn">Contáctame</a>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Mi Portafolio</p>
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="about-text">
+                        Estudiante de pregrado en Desarrollo de Software en I.U. Pascual Bravo, con una sólida ética de trabajo y un enfoque proactivo en la resolución de problemas. Destacado por la creatividad, responsabilidad y capacidad para trabajar eficientemente bajo presión y en entornos colaborativos.
+                    </p>
+                    <div class="interests mt-4">
+                        <h4>Mis Intereses</h4>
+                        <div class="row mt-3">
+                            <div class="col-6 col-md-3 interest-item">
+                                <i class="fas fa-code"></i>
+                                <span>Desarrollo web</span>
+                            </div>
+                            <div class="col-6 col-md-3 interest-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>Automatización de procesos</span>
+                            </div>
+                            <div class="col-6 col-md-3 interest-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Inteligencia artificial</span>
+                            </div>
+                            <div class="col-6 col-md-3 interest-item">
+                                <i class="fas fa-hands-helping"></i>
+                                <span>Proyectos con impacto social</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <div class="skill-icon-stack">
+                            <i class="fab fa-csharp"></i>
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <span>C# (.NET)</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <span>SQL Server</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fas fa-network-wired"></i>
+                        <span>n8n</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git y GitHub</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML y CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>daniel60mv@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Daniimazo" target="_blank">github.com/Daniimazo</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>3242820123</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Medellín, Colombia</span>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/Daniimazo" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:daniel60mv@gmail.com" class="social-btn">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>My Portafolio by Dani</h5>
+                    <p>Construyendo soluciones inteligentes con código y creatividad.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope"></i> daniel60mv@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 3242820123</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Medellín, Colombia</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Daniel Mazo Vásquez. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
