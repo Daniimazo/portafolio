@@ -5,17 +5,46 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #D1FAE5;  /* Emerald 100 */
+    --secondary-color: #333;  /* Texto oscuro */
+    --text-color: #333;
+    --bg-light: #F0FDF4;  /* Emerald 50 */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+    background-color: var(--bg-light);
 }
 
 /* Encabezado */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.logo .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.logo .subtitle {
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+    opacity: 0.9;
 }
 
 nav ul {
@@ -25,8 +54,14 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
 }
 
 /* Contenido principal */
@@ -38,8 +73,8 @@ main {
 
 /* Pie de página */
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
     position: fixed;
