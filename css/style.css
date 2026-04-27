@@ -21,6 +21,14 @@ body {
     color: var(--light-text);
     background-color: var(--dark-bg);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 2rem;
 }
 
 /* Navbar */
@@ -262,8 +270,8 @@ section {
 .skill-icon-stack .fa-microsoft {
     font-size: 2.2rem;
     position: absolute;
-    bottom: -10px;
-    right: -6px;
+    bottom: -60px;
+    right: 0px;
     color: #00d4ff;
     background: rgba(15, 23, 42, 0.9);
     border-radius: 50%;
@@ -511,6 +519,127 @@ section {
     box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
     color: white;
 }
+
+/* Proyectos Académicos Section */
+.academic-projects-section {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+}
+
+.academic-projects-section .section-header .section-title {
+    color: var(--light-text);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.academic-projects-section .subtitle {
+    color: var(--muted-text);
+    font-size: 1.1rem;
+}
+
+.academic-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    height: 100%;
+}
+
+.academic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+    border-color: var(--accent-color);
+}
+
+.academic-card .card-image {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(34, 211, 238, 0.1));
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.academic-card .card-image i {
+    font-size: 4rem;
+    color: var(--accent-color);
+}
+
+.academic-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.academic-card .card-content {
+    padding: 1.5rem;
+}
+
+.academic-card .card-content h3 {
+    color: var(--light-text);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.academic-card .card-content p {
+    color: var(--muted-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.tech-badges .badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.tech-badges .bg-csharp {
+    background: rgba(104, 120, 246, 0.2);
+    color: #6878f6;
+    border: 1px solid rgba(104, 120, 246, 0.3);
+}
+
+.tech-badges .bg-dotnet {
+    background: rgba(0, 120, 212, 0.2);
+    color: #0078d4;
+    border: 1px solid rgba(0, 120, 212, 0.3);
+}
+
+.tech-badges .bg-sqlserver {
+    background: rgba(226, 76, 136, 0.2);
+    color: #e24c88;
+    border: 1px solid rgba(226, 76, 136, 0.3);
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #06b6d4, #22d3ee);
+    color: var(--darker-bg);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-github:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(6, 182, 212, 0.4);
+    color: var(--darker-bg);
 }
 
 /* Pie de página */
@@ -519,7 +648,6 @@ footer {
     color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
